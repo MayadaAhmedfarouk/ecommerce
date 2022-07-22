@@ -1,0 +1,49 @@
+h2 {
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+}
+p {
+  font-size: 14px;
+  max-width: 100%;
+  color: #666666;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.view {
+  margin-top: 50px;
+  text-align: center;
+}
+.view .image {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+}
+.view .cart-text {
+  margin-top: 50px;
+}
+.btn-dark {
+  --bs-btn-color: #fff;
+  color: #fff;
+  --bs-btn-bg: #000;
+  --bs-btn-border-color: #000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #cf0012;
+  --bs-btn-hover-border-color: #cf0012;
+  --bs-btn-hover-outline: 0;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-border-color: #000;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba (0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #cf0018;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  outline: 0 !important;
+}
+.btn-dark:hover {
+  transition: all 0.5s ease-in-out;
+
+  text-decoration: none;
+  outline: 0 !important;
+}

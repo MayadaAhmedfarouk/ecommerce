@@ -1,0 +1,138 @@
+h2 {
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+}
+
+.heading h2 {
+  position: relative;
+
+  padding-left: 135px;
+  font-weight: bold;
+}
+.heading h2::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  width: 23%;
+  height: 0.1rem;
+  background-color: #f9f9f9;
+  transform: translate(-50%, -50%);
+}
+.heading h2::after {
+  content: "";
+
+  position: absolute;
+  right: 30%;
+
+  top: 50%;
+
+  width: 25%;
+  height: 0.1rem;
+  background-color: #f9f9f9;
+  transform: translate(-50%, -50%);
+}
+.icon {
+  margin-top: 50px;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #cf0018;
+  --bs-btn-border-color: #cf0012;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: black;
+  --bs-btn-hover-outline: 0;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-border-color: #cf0018;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba (0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #cf0018;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+a {
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  text-decoration: none;
+  outline: 0 !important;
+}
+.form-control {
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  transition: all 0.5 ease-in-out;
+  box-shadow: unset !important;
+
+  color: #000;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .heading h2 {
+    padding-left: 90px;
+  }
+  .heading h2::before {
+    content: "";
+
+    position: absolute;
+    left: 3%;
+    top: 50%;
+
+    width: 25%;
+    height: 0.1rem;
+    background-color: #f9f9f9;
+    transform: translate(-50%, -50%);
+  }
+  .heading h2::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+
+    top: 50%;
+
+    width: 22%;
+    height: 0.1rem;
+    background-color: #f9f9f9;
+    transform: translate(-50%, -50%);
+  }
+  .icon {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .heading h2 {
+    padding-left: 80pxpx;
+  }
+  .heading h2::before {
+    content: "";
+
+    position: absolute;
+    left: 3%;
+    top: 50%;
+
+    width: 25%;
+    height: 0.1rem;
+    background-color: #f9f9f9;
+    transform: translate(-50%, -50%);
+  }
+  .heading h2::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+
+    top: 50%;
+
+    width: 25%;
+    height: 0.1rem;
+    background-color: #f9f9f9;
+    transform: translate(-50%, -50%);
+  }
+}

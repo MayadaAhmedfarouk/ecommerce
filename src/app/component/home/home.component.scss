@@ -1,0 +1,100 @@
+.carousel {
+  margin-top: 50px;
+}
+.carousel-item {
+  height: 600px;
+}
+
+.background {
+  background: #eeeeee;
+  text-align: center;
+  padding: 18px;
+  border: 1px solid rgb(221, 212, 212);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.icon {
+  background: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px auto;
+  padding: 10px;
+}
+.icon:hover {
+  background: red;
+}
+// .fa-truck-fast:before {
+//     content: "\f48b";
+
+//     color: gray;
+// }
+.icon:hover {
+  color: rgb(255, 255, 255);
+  transition: all 1s ease-out;
+}
+.head h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+//products
+.card {
+  position: relative;
+  border: none;
+}
+
+.quickView {
+  position: absolute;
+  top: 3%;
+  right: 6%;
+  background: #000;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.card:hover .quickView {
+  display: block;
+}
+
+.quickView:hover {
+  background-color: #cf0018;
+}
+.fa-search-plus:before {
+  content: "\f00e";
+  font-size: 17px;
+  color: #fff;
+  line-height: 32px;
+}
+
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+  margin: auto;
+}
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .carousel-item {
+    height: 250px;
+  }
+  .mod {
+    padding-left: 0;
+    padding-right: 80px;
+  }
+}

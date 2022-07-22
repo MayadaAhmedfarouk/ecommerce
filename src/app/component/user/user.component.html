@@ -1,0 +1,85 @@
+<div class="user mt-5 mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 mt-5">
+        <div class="heading mt-5">
+          <h2>My Account</h2>
+        </div>
+      </div>
+      <div class="col-md-2 mt-5 mb-4">
+        <div class="icon">
+          <a routerLink="/home"> home</a> &nbsp;<i
+            class="fa-solid fa-circle-arrow-right"
+          ></i>
+        </div>
+      </div>
+      <div class="col-md-6 mt-5 mb-3">
+        <h2>Login</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="loginData()">
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              formControlName="email"
+              placeholder="Username or email"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              formControlName="pass"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              value="check"
+              formControlName="check"
+            />
+            <label class="form-check-label">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">log in</button>
+        </form>
+      </div>
+      <div class="col-md-6 mt-5 mb-5">
+        <h2>Register</h2>
+        <form [formGroup]="register" (ngSubmit)="registerData()">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="userName"
+              placeholder="Username"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              formControlName="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="password"
+              formControlName="password"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

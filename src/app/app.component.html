@@ -1,0 +1,224 @@
+<!---navbar------>
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/"
+      ><img
+        src="https://vaxim-ng.envytheme.com/assets/img/logo.png"
+        style="padding-left: 50px"
+        alt=""
+        srcset=""
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product">product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user"
+            ><i class="far fa-user"></i>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart"
+            ><i class="fas fa-shopping-cart"></i
+            ><span class="badge text-bg-danger" *ngIf="totalItemNumber > 0">{{
+              totalItemNumber
+            }}</span></a
+          >
+        </li>
+      </ul>
+      <!-- <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link"  routerLink="/user"><i class="far fa-user"></i> </a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="/cart"><i  class="fas fa-shopping-cart"></i><span class="badge text-bg-danger" *ngIf="totalItemNumber >0">{{ totalItemNumber}}</span></a>
+            </li>
+
+
+          </ul>-->
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div class=" modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+      </div>
+      <div class="modal-body">
+
+        <ul class="navbar-modal">
+          <li class="item">
+            <a class="nav-link " routerLink="/">Home</a>
+          </li>
+
+          <li class="item">
+            <a class="nav-link" routerLink="/product">product</a>
+          </li>
+          <li class="item">
+            <a class="nav-link" routerLink="/user"
+              ><i class="far fa-user"></i>
+            </a>
+          </li>
+
+          <li class="item">
+            <a class="nav-link" routerLink="/cart"
+              ><i class="fas fa-shopping-cart"></i
+              ><span class="badge text-bg-danger" *ngIf="totalItemNumber > 0">{{
+                totalItemNumber
+              }}</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+ <!----------------------->
+
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!----------------footer-->
+<div class="footer mt-5 mb-5">
+  <div class="container">
+    <div class="row back">
+      <div class="col-md-6 col-sm-12 mt-5 mb-5">
+        <img
+          src="https://vaxim-ng.envytheme.com/assets/img/logo.png"
+          style="padding-left: 50px; padding-bottom: 50px"
+          alt=""
+          srcset=""
+        />
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </p>
+        <ul class="social-links">
+          <li class="icon-social"><i class="fa-brands fa-facebook"></i></li>
+          <li class="icon-social"><i class="fa-brands fa-twitter"></i></li>
+
+          <li class="icon-social"><i class="fa-brands fa-instagram"></i></li>
+          <li class="icon-social"><i class="fa-brands fa-pinterest-p"></i></li>
+          <br />
+          <a routerLink="/home" class="cc">Check our shop in Google Map</a>
+        </ul>
+      </div>
+      <div class="col-md-6 mb-5">
+        <div class="row">
+          <div class="col-md-4 mt-5 mb-2">
+            <h2>Help</h2>
+            <ul class="custom-link">
+              <li>
+                <a routerLink="/home" class="help-link"> Track Your Order</a>
+              </li>
+
+              <li>
+                <a routerLink="/home" class="help-link"> Product Guides</a>
+              </li>
+              <li><a routerLink="/home" class="help-link">Wishlists </a></li>
+              <li>
+                <a routerLink="/home" class="help-link"> Privacy Policy</a>
+              </li>
+              <li>
+                <a routerLink="/home" class="help-link">Store Locator </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-5 mb-2">
+            <h2>Company</h2>
+            <ul class="custom-link">
+              <li><a routerLink="/home" class="help-link"> About Us</a></li>
+
+              <li><a routerLink="/home" class="help-link"> Contact Us</a></li>
+              <li><a routerLink="/home" class="help-link">Location Us</a></li>
+              <li><a routerLink="/home" class="help-link"> Careers</a></li>
+              <li><a routerLink="/home" class="help-link">Gift Cards </a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-5 mb-2">
+            <h2>Help</h2>
+            <ul class="custom-link">
+              <li><a routerLink="/home" class="help-link"> Instagram</a></li>
+
+              <li><a routerLink="/home" class="help-link"> Pinterest</a></li>
+              <li><a routerLink="/home" class="help-link">Facebook</a></li>
+              <!-- <li><a routerLink="/home" class="help-link"> Phone:</a></li> -->
+
+              <li>
+                <a class="help-link" href="tel:+123) 456-7898" target="_blank">
+                  call us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12" style="border-top: 1px solid #e8e8e8">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <div class="copy-right">
+              <p>
+                &copy; Vaxim is Proudly Owned by
+                <a routerLink="/home" class="help-link"> EnvyTheme</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 mt-2"></div>
+          <div class="col-md-3 mt-5 mb-5">
+            <ul class="custom-link">
+              <li>
+                <img
+                  src="https://vaxim-ng.envytheme.com/assets/img/payment.png"
+                  alt=""
+                  srcset=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
