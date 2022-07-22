@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  cartData=new Subject<any>()
+  cartData=new Subject<any>();
   apiUrl='https://fakestoreapi.com'
 
   constructor(private http:HttpClient) { }
